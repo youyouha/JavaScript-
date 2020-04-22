@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //while循环案例
+        //1.打印人的一生，从1岁到100岁
+        var i = 1;
+        while (i <= 100) {
+            console.log('我今年' + i + '岁了');
+            i++
+        }
+        //2.计算1 - 100 之间所有整数的和
+        var sum = 0;
+        var num = 1;
+        while (num <= 100) {
+            sum += num;
+            num++;
+        }
+        console.log(sum);
+        //3. 弹出一个提示框， 你爱我吗？ 如果输入我爱你，就提示结束，否则一直询问
+        var love = prompt('Do you love me?');
+        while (love !== 'yes') {
+            love = prompt('Do you love me?');
+        }
+        alert('♥♥♥♥♥ me too! ♥♥♥♥♥');
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

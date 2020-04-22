@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 打印倒三角形☆
+        var rows = prompt('请输入行数：');
+        // var cols = prompt('请输入列数：');
+        var str = '';
+        for (var i = 1; i <= rows; i++) { //外层循环控制行数
+            for (j = i; j <= rows; j++) { //内层循环打印的个数不一样 j=i
+                str += '☆';
+            }
+            str += '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

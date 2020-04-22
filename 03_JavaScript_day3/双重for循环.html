@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //双重for循环 语法结构
+        //for (外循环的初始; 外循环的条件; 外循环的操作表达式) {
+        //      for (内循环的初始; 内循环的条件; 内循环的操作表达式) {
+        //         需执行的代码;
+        //     }
+        // }
+        // 外层循环执行一次，内层循环要执行全部次数
+        for (var i = 1; i <= 3; i++) {
+            console.log('这是外层循环第' + i + '次');
+            for (var j = 1; j <= 2; j++) {
+                console.log('内层循环第' + j + '次');
+            }
+        }
+        // 打印五行五列星星
+        // 内层循环负责一行打印五个星星，外层循环负责打印五行
+        var str = '';
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 1; j <= 5; j++) {
+                str = str + '☆';
+            }
+            // 如果一行打印完毕5个星星就要另起一行
+            str = str + '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
