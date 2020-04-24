@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //用户输入任意两个数字的任意算术运算，并能弹出运算后的结果
+        var mark = prompt('请选择一个运算符：+ - * /');
+        var num1 = prompt('请输入第一个数字：');
+        var num2 = prompt('请输入第二个数字：');
+        var num;
+
+        function getResult(num1, num2, mark) {
+            switch (num) {
+                case "+":
+                    num = parseFloat(num1) + parseFloat(num2);
+                    break;
+                case "-":
+                    num = parseFloat(num1) - parseFloat(num2);
+                    break;
+                case "*":
+                    num = parseFloat(num1) * parseFloat(num2);
+                    break;
+                case "/":
+                    num = parseFloat(num1) / parseFloat(num2);
+                    break;
+                default:
+            }
+            return num;
+        }
+        getResult(mark, num1, num2);
+        alert(num1 + mark + num2 + '=' + num);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

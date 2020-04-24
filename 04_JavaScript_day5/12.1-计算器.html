@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        function d() {
+            var num1 = parseInt(prompt("请输入第一个数:"));
+            var num2 = parseInt(prompt("请输入第二个数:"));
+            var num = prompt("请输入符号:");
+            var score;
+            switch (num) {
+
+                case "+":
+                    score = num1 + num2;
+                    break;
+                case "-":
+                    score = num1 - num2;
+                    break;
+                case "*":
+                    score = num1 * num2;
+                    break;
+                case "/":
+                    score = num1 / num2;
+                    break;
+                default:
+
+            }
+            alert(num1 + num + num2 + '=' + score);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="便捷式计算器" "d();" />
+</body>
+
+</html>

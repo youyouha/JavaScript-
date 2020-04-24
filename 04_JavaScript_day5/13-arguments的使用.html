@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // arguments的使用
+        function fn() {
+            console.log(arguments); //里面存储了所有实参
+            console.log(arguments.length);
+            //我们可以按照数组的方式遍历arguments
+            for (var i = 0; i <= arguments.length; i++) {
+                console.log(arguments[i]);
+
+            }
+        }
+        fn(1, 2, 3);
+        // arguments展示形式是一个伪数组，并不是真正意义上的数组，因此可以进行遍历。伪数组具有以下特点：
+        //  具有 length 属性
+        //  按索引方式储存数据
+        //  不具有数组的 push , pop 等方法
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
