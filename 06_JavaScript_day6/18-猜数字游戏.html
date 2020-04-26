@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //猜数字游戏
+        // 程序随机生成一个 1~ 10 之间的数字，并让用户输入一个数字，
+        // 1. 如果大于该数字，就提示，数字大了，继续猜；
+        // 2. 如果小于该数字，就提示数字小了，继续猜；
+        // 3. 如果等于该数字，就提示猜对了， 结束程序。
+        //案例分析
+        // ① 随机生成一个1~10 的整数 我们需要用到 Math.random() 方法。
+        // ② 需要一直猜到正确为止，所以一直循环。
+        // ③ 用while 循环合适更简单。
+        // ④ 核心算法：使用 if else if 多分支语句来判断大于、小于、等于。
+        function getRandom(max, min) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        var random = getRandom(1, 10);
+        while (true) { //死循环    所以一定要写退出条件
+            var num = prompt('你来猜？ 请输入1~10之前任意一个数字：');
+            if (num > random) {
+                alert('你猜大了！');
+            } else if (num < random) {
+                alert('你猜小了！');
+            } else {
+                alert('你猜中了！');
+                break; //退出整个循环，结束程序
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

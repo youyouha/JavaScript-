@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 根据在内部函数可以访问外部函数变量的这种机制，用链式查找决定哪些数据能被内部函数访问，就称 作作用域链
+        var num = 10;
+
+        function fn() { //外部函数
+            var num = 20;
+
+            function fn() { //内部函数
+                console.log(num); //内部函数可以访问外部函数变量
+                //采取就近原则
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

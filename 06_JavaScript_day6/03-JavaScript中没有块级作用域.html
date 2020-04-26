@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //JavaScript中没有块级作用域  js的作用域：全局作用域  局部作用域   现阶段我们js没有块级作用域
+        //js 也是在es6的时候新增的块级作用域
+        //块级作用域 {}  if {}  for {}
+        //java
+        // if(xx){
+        //     int num = 10;
+        // }
+        //外面的是不能调用num 的
+        if (3 < 5) {
+            var num = 10; //在花括号里声明的变量 在外面都能使用
+        }
+        console.log(num);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

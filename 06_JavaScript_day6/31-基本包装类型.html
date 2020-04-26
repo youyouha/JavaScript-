@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //基本包装类型
+        // 为了方便操作基本数据类型，JavaScript 还提供了三个特殊的引用类型：String、Number和 Boolean
+
+        var str = 'andy';
+        console.log(str.length);
+        // 按道理基本数据类型是没有属性和方法的，而对象才有属性和方法，
+        // 但上面代码却可以执行，这是因为 js 会把基本数据类型包装为复杂数据类型，其执行过程如下 ：
+
+
+        // 1. 生成临时变量，把简单类型包装为复杂数据类型
+        var temp = new String('andy');
+        // 2. 赋值给我们声明的字符变量
+        str = temp;
+        // 3. 销毁临时变量
+        temp = null;
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

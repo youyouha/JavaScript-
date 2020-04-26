@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //作用域链：采取就近原则的方式来查找变量最终的值。
+        function f1() { //0级链
+            var num = 123; //1级链
+
+            function f2() {
+                console.log(num); //2级链         站在目标出发 一层一层往外找
+            }
+            f2(); //1级链
+        }
+        var num = 456; //0级链
+        f1();
+
+
+        //案例2   先检查函数是否被调用    站在目标出发 一层一层往外找
+        var a = 1; //0
+
+        function fn1() { //1
+            var a = 2; //2
+            var b = '22'; //2
+            fn2(); //2
+
+            function fn2() { //3
+                var a = 3; //3
+                fn3(); //3
+
+                function fn3() { //4
+                    var a = 4; //4
+                    console.log(a); //a的值 ?//4
+                    console.log(b); //b的值 ? //4
+                }
+            }
+        }
+        fn1(); //0
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

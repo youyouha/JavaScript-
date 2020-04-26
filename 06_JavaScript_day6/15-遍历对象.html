@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //遍历对象
+        var obj = {
+            name: 'pink老师',
+            age: 18,
+            sex: '男'
+        }
+        console.log(obj.name);
+        console.log(obj.age);
+        console.log(obj.sex);
+        // for in 遍历我们的对象
+        // for (变量 in 对象){
+
+        // }
+        for (var k in obj) {
+            console.log(k); //k 变量 输出  得到的是属性名
+            console.log(obj[k]); //必须采用中括号的形式，k是变量不加引号，得到的是属性值
+        }
+        //for in 里面的变量 我们习惯用 k 或  key
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

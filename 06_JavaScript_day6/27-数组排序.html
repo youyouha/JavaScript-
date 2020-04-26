@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //数组排序
+        //1.翻转数组
+        var arr = ['pink', 'red', 'blue'];
+        arr.reverse();
+        console.log(arr);
+
+        //2.数组排序 （冒泡排序）
+        var arr1 = [3, 4, 7, 1];
+        // arr1.sort();   //只适用于个位数进行冒泡排序 若出现[1,12,5,3]   则排序结果为[1,12,3,5] 
+        arr.sort(function (a, b) { //记住这个固定写法
+            return a - b; //按照升序的顺序排列
+            return b - a; //按照降序的顺序排列
+        });
+        console.log(arr1);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
